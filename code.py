@@ -19,6 +19,9 @@ df_dummies.drop("customerID", axis= 1, inplace= True)
 x = df_dummies[df_dummies.columns[0:30]]
 y = df_dummies["Churn_Yes"]
 x_train, x_test, y_train, y_test = train_test_split(  x, y , train_size = 0.7,random_state= 67)
+
+#Building neural network using keras
+
 from __future__ import print_function
 
 import math
